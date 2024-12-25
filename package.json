@@ -14,7 +14,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app"
+      "react-app",
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -31,7 +32,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gb-react": "file:",
     "react-scripts": "^5.0.1",
-    "sass": "^1.81.0"
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4"
   }
 }
