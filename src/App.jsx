@@ -1,12 +1,16 @@
-import { CommentsList } from "./components/Comments/CommentsList";
-import { Layout } from "./components/layout/Layout";
-import { Message } from "./components/Message/Message";
+import { Container } from "@mui/material";
+import {
+  CommentsList,
+  TemperatureConverter,
+  Message,
+  TodoList,
+} from "./components";
 
 export const App = () => {
   return (
-    <Layout>
+    <Container maxWidth="sm">
       <div className="task">
-        <Message text={"Первое задание"} />
+        <Message text={"Первый семинар"} bold />
         <Message
           text={
             "Создать компонент Message, отображающий переданный ему props текст"
@@ -14,9 +18,16 @@ export const App = () => {
         />
       </div>
       <div className="task">
-        <Message text={"Второе задание"} />
+        <Message text={"Второй семинар"} bold />
         <CommentsList />
       </div>
-    </Layout>
+      <div className="task">
+        <Message text={"Третьий семинар"} bold />
+        <Message text={"Первая задача"} small />
+        <TemperatureConverter />
+        <Message text={"Вторая задача"} small />
+        <TodoList />
+      </div>
+    </Container>
   );
 };
