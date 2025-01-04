@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    padding-block: 25px;
+    padding-inline: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 1px 2px 0px #D5D5D5;
+
+    .headerNav {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        >a {
+            color: blue;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: rgb(107, 107, 221);
+            }
+        }
+
+
+        .header_active {
+            color: green;
+        }
+
+        .active {
+            color: green;
+        }
+    }
+}
