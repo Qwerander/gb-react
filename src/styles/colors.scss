@@ -1,9 +1,9 @@
 :root {
-  --black: #000;
-  --white: #fff;
+  --black: #222;
+  --white: #eee;
 
   --dark: #333;
-  --gray: #ccc;
+  --gray: #bbb;
   --background: #f9f9f9;
   --red: #ff4d4f;
   --red-hover: #812425;
@@ -11,9 +11,9 @@
 }
 
 [data-theme="dark"] {
-  --black: #fff;
-  --white: #000;
-  --dark: #ccc;
+  --black: #eee;
+  --white: #222;
+  --dark: #bbb;
   --gray: #333;
   --background: #121212;
   --red: #ff7675;

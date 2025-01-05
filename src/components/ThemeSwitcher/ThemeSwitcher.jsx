@@ -1,14 +1,13 @@
-// src/components/ThemeSwitcher.js
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTheme } from "../../redux/themeSlice";
+import { toggleTheme } from "../../redux/slices/themeSlice";
 import { Switch, Box } from "@mui/material";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import "./themeSwitcher.scss";
 
 export const ThemeSwitcher = () => {
-  const theme = useSelector((state) => state.theme);
+  const theme = useSelector((state) => state.theme.theme);
   const dispatch = useDispatch();
 
   const handleToggle = () => {
