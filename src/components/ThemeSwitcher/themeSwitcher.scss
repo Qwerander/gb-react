@@ -1,0 +1,11 @@
+.themeSwitcher__wrapper {
+    >svg {
+        fill: var(--black);
+    }
+
+    .themeSwitcher__toggle {
+        .MuiSwitch-track {
+            background-color: var(--dark);
+        }
+    }
+}

@@ -9,6 +9,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--white);
+    transition: var(--transition);
 }
 
 #root {
@@ -37,4 +38,16 @@ body {
 
 .active {
     color: green !important;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+.MuiTypography-root {
+    color: var(--black);
+    transition: var(--transition);
 }

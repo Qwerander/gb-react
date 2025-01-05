@@ -1,3 +1,5 @@
+import { Title } from "../../shared/Title/Title";
+
 export const HomePage = () => {
-  return <h1>Главная страница</h1>;
+  return <Title title={"Главная страница"} />;
 };

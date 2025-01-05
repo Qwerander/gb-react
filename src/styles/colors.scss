@@ -7,4 +7,15 @@
   --background: #f9f9f9;
   --red: #ff4d4f;
   --red-hover: #812425;
+  --transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --black: #fff;
+  --white: #000;
+  --dark: #ccc;
+  --gray: #333;
+  --background: #121212;
+  --red: #ff7675;
+  --red-hover: #ff5252;
 }

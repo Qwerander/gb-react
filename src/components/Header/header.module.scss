@@ -1,5 +1,7 @@
 .header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-block: 25px;
     padding-inline: 50px;
     margin-bottom: 50px;
@@ -12,7 +14,7 @@
 
         >a {
             color: blue;
-            transition: color 0.3s ease-in-out;
+            transition: var(--transition);
 
             &:hover {
                 color: rgb(107, 107, 221);

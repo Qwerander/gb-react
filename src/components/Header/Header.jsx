@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import cls from "./header.module.scss";
+import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
 
 export const Header = () => {
   return (
@@ -9,6 +10,7 @@ export const Header = () => {
         <NavLink to="/about" activeClassName="active">О нас</NavLink>
         <NavLink to="/tasks" activeClassName="active">Первые три урока</NavLink>
       </nav>
+      <ThemeSwitcher />
     </header>
   );
 };
